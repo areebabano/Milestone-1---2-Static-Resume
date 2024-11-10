@@ -1,0 +1,295 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+     display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* style Header  */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0a2233f0;
+  padding: 20px;
+  color: white;
+}
+
+.header-text {
+  max-width: 60%;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header-text h6 {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.contact-info, .additional-info {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.additional-info {
+  flex-wrap: wrap; /* Allows items to wrap if needed */
+}
+
+.location {
+  margin: 0; /* Ensures no margin for the location text */
+}
+
+.links {
+  display: flex;
+  gap: 10px; /* Space between links */
+}
+
+.portfolio_link, .social-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #0a2233f0;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.portfolio_link i, .social-link i {
+  margin-right: 5px;
+}
+
+.portfolio_link:hover, .social-link:hover {
+  background-color: #133954f0;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.contact-info i, .additional-info i {
+  color: darkgoldenrod;
+  margin-right: 5px;
+}
+
+/* Style experience section */
+.experience {
+  margin: 10px 0;
+  padding: 30px;
+  padding-bottom: 0%;
+  padding-top: 5px;
+}
+
+.experience h2 {
+  font-size: 24px; /* Font size for the section title */
+  color: #0a2233f0; /* Color for the section title */
+  margin-bottom: 10px; 
+  padding-bottom:0%;
+}
+
+.experience-item {
+  border-top: 4px solid #0a2233; /* Border at the top */
+  padding-top: 10px; /* Padding at the top */
+  /* padding-left: 0; No padding on the left */
+  margin-bottom: 10px;
+  margin-top: 10px; /* Space above each experience item */
+}
+
+
+.experience-item h3 {
+  font-size: 20px; /* Font size for job title */
+  color: #335b79; /* Color for job title */
+  margin: 5px 0; /* Space above and below job title */
+}
+
+.company {
+  font-weight: bold; /* Bold font for company name */
+  color: #333; /* Color for company name */
+}
+
+.duration-location {
+  font-size: 14px; /* Font size for duration and location */
+  color: #666; /* Color for duration and location */
+  margin: 5px 0; /* Space above and below */
+}
+
+.duration, .company-location {
+  display: inline; /* Ensure both elements stay on the same line */
+}
+
+.description {
+  font-size: 16px; /* Font size for the description */
+  line-height: 1.6; /* Line height for better readability */
+  color: #444; /* Color for description text */
+  margin-bottom: 0;
+}
+
+.description b {
+  color: #0a2233; /* Color for bold text within the description */
+}
+
+/* style education section */
+
+.education {
+  margin: 10px 0;
+  padding: 30px;
+  padding-bottom: 0%;
+  padding-top: 5px;
+}
+
+.education h2 {
+  font-size: 24px;
+  color: #0a2233f0;
+  margin-bottom: 10px;
+  padding-bottom:0%;
+}
+
+.education-item {
+  border-top: 4px solid #0a2233; /* Top border */
+  padding-top: 10px;
+  /* padding-left: 0; */
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.education-item h3 {
+  font-size: 20px;
+  color: #335b79;
+  margin: 5px 0;
+}
+
+.institution {
+  font-weight: bold;
+  color: #333;
+}
+
+.duration {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Skills section styles */
+
+.skills h2 {
+  font-size: 24px; /* Font size for the section title */
+  color: #0a2233f0; /* Color for the section title */
+  margin-bottom: 10px; 
+  padding-bottom:0%;
+}
+
+.skills {
+  margin: 10px 0;
+  padding: 30px;
+  padding-bottom: 0%;
+  padding-top: 5px;
+}
+
+.skills-content {
+  border-top: 4px solid #0a2233; /* Top border */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Toggle button styling */
+.toggle-button {
+  background-color: #0a2233; /* Dark blue */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  align-self: flex-end; /* Align the button to the right */
+  display: flex;
+  align-items: center; /* Center align text and icon */
+}
+
+.toggle-button i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.toggle-button:hover {
+  background-color: #b8860b; /* Dark goldenrod on hover */
+}
+
+
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 1em;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.skills-list i {
+  margin-right: 5px;
+}
+
+/* Hidden class for toggle functionality */
+.hidden {
+  display: none;
+}
+
+.summary {
+  margin: 10px 0;
+  padding: 30px;
+  padding-bottom: 0%;
+  padding-top: 5px;
+}
+
+.summary h2 {
+  font-size: 24px; /* Font size for the section title */
+  color: #0a2233f0; /* Color for the section title */
+  margin-bottom: 20px; /* Adds space below the heading */
+  padding-bottom: 10px; /* Adds padding below the text before the border */
+  border-bottom: 4px solid #0a2233; /* Border at the bottom of the heading */
+}
+
+.detail-summary {
+ 
+  font-size: 16px; /* Font size for the description */
+  line-height: 1.6; /* Line height for better readability */
+  color: #444; /* Color for description text */
+  margin-bottom: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#left, #right {
+  width: 45%; /* You can adjust the width as needed */
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+
